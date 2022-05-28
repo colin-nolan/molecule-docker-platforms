@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-set -eu -o pipefail
+set -eufm -o pipefail
 
 /usr/local/bin/dockerd-entrypoint.sh &
+disown
 
 while true; do
     { docker ps 2> /dev/null && break; } || true
