@@ -1,9 +1,10 @@
-FROM colinnolan/ubuntu-with-docker:18.04-19.03-dind
+FROM colinnolan/ubuntu-with-docker:22.04-20.10-dind
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-         python3 \
-         python3-pip \
-         python3-setuptools \
+        python-is-python3 \
+        python3 \
+        python3-pip \
+        python3-setuptools \
     && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip to latest available version
