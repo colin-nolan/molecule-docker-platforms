@@ -4,3 +4,9 @@
 # Molecule Docker Platforms
 
 Docker images to use as Molecule platforms.
+
+## Legal
+
+[MIT](LICENSE.txt).
+
+This work is in no way related to the company that I work for.
